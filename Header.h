@@ -139,8 +139,8 @@ public:
     while (current != nullptr) {
 
       std::cout << current->coefficient << "x^" << current->degrees / 100 << " "
-                << "y^" << (current->degrees / 10) % 10 << " "
-                << "z^" << current->degrees % 10;
+                << "y^" << (current->degrees / 10) % 10 << " " << "z^"
+                << current->degrees % 10;
 
       current = current->next;
       if (current != nullptr) {
